@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Digital Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">Rajeev </div>
+            </div>
+            
+            <div class="nav-center">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#contact" class="contact-btn">Get In Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <div class="glass-sphere"></div>
+            <div class="glass-sphere-prism"></div>
+            <div class="text-distortion"></div>
+        
+            <!-- Additional floating bubbles -->
+            <div class="bubble-small bubble-1"></div>
+            <div class="bubble-small bubble-2"></div>
+            <div class="bubble-small bubble-3"></div>
+        
+            <h1 class="hero-title">
+                SEO<br>
+                Expert<span class="orange-dot">.</span>
+            </h1>
+            <p class="hero-subtitle">Seems fishy but effective.</p>
+            <div class="hero-cta">
+                <a href="#work" class="cta-button">View My Work</a>
+                <a href="/resume.pdf" class="cta-button secondary" target="_blank">Download CV</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About me<span class="orange-dot">.</span></h2>
+                    <p class="about-description">
+                        I'm a passionate digital creator with expertise in web development, 
+                        design, and digital strategy. I love crafting beautiful, functional 
+                        experiences that solve real problems and delight users.
+                    </p>
+                    <p class="about-description">
+                        With a background in both technical development and creative design, 
+                        I bring a unique perspective to every project, ensuring both form 
+                        and function work in perfect harmony.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Your Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work/Portfolio Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="section-title">Featured work<span class="orange-dot">.</span></h2>
+            <div class="work-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="work-grid">
+                <div class="work-item" data-category="web">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-stack web application</p>
+                            <div class="work-links">
+                                <a href="#" class="work-link">View Live</a>
+                                <a href="#" class="work-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>E-commerce Platform</h4>
+                        <span class="work-tech">React, Node.js, MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-category="design">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete visual identity design</p>
+                            <div class="work-links">
+                                <a href="#" class="work-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>Brand Identity</h4>
+                        <span class="work-tech">Figma, Illustrator</span>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-category="mobile">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <h3>Mobile App</h3>
+                            <p>Cross-platform mobile application</p>
+                            <div class="work-links">
+                                <a href="#" class="work-link">App Store</a>
+                                <a href="#" class="work-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>Mobile App</h4>
+                        <span class="work-tech">React Native, Firebase</span>
+                    </div>
+                </div>
+                
+                <div class="work-item" data-category="web">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Responsive portfolio design</p>
+                            <div class="work-links">
+                                <a href="#" class="work-link">View Live</a>
+                                <a href="#" class="work-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h4>Portfolio Website</h4>
+                        <span class="work-tech">HTML, CSS, JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & expertise<span class="orange-dot">.</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">Sketch</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's work together<span class="orange-dot">.</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <span class="contact-icon">✉</span>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="tel:+1234567890" class="contact-method">
+                            <span class="contact-icon">📞</span>
+                            <span>+1 (234) 567-890</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank">
+                            <span class="contact-icon">💼</span>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
